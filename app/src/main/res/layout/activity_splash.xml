@@ -3,17 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    tools:context=".activity.SplashActivity">
 
     <ImageView
-        android:layout_width="250dp"
-        android:layout_height="184dp"
-        android:layout_gravity="center"
-        android:src="@drawable/logo"
-        tools:ignore="ContentDescription" />
-
-    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gambar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/item_makanan" />
+        android:background="@drawable/firstpage"
+        tools:ignore="ContentDescription"/>
 </LinearLayout>
