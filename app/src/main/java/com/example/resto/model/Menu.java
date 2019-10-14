@@ -8,17 +8,7 @@ public class Menu implements Parcelable {
     public static final int TIPE_MAKANAN = 0;
     public static final int TIPE_MINUMAN = 1;
     public static final int TIPE_SNACK = 3;
-    public static final Creator<Menu> CREATOR = new Creator<Menu>() {
-        @Override
-        public Menu createFromParcel(Parcel in) {
-            return new Menu(in);
-        }
 
-        @Override
-        public Menu[] newArray(int size) {
-            return new Menu[size];
-        }
-    };
     private int gambar, tipe;
     private String nama, harga, deskripsi;
 
@@ -28,14 +18,6 @@ public class Menu implements Parcelable {
         this.nama = nama;
         this.harga = harga;
         this.deskripsi = deskripsi;
-    }
-
-    protected Menu(Parcel in) {
-        gambar = in.readInt();
-        tipe = in.readInt();
-        nama = in.readString();
-        harga = in.readString();
-        deskripsi = in.readString();
     }
 
     public int getGambar() {
@@ -91,4 +73,24 @@ public class Menu implements Parcelable {
         parcel.writeString(harga);
         parcel.writeString(deskripsi);
     }
+
+	public static final Creator<Menu> CREATOR = new Creator<Menu>() {
+		@Override
+		public Menu createFromParcel(Parcel in) {
+			return new Menu(in);
+		}
+
+		@Override
+		public Menu[] newArray(int size) {
+			return new Menu[size];
+		}
+	};
+
+	protected Menu(Parcel in) {
+		gambar = in.readInt();
+		tipe = in.readInt();
+		nama = in.readString();
+		harga = in.readString();
+		deskripsi = in.readString();
+	}
 }
