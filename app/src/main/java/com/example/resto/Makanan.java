@@ -1,4 +1,4 @@
-package com.example.belajar1;
+package com.example.resto;
 
 import android.os.Parcel;
 import android.os.Parcelable;

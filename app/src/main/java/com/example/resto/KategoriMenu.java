@@ -1,8 +1,8 @@
-package com.example.belajar1;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.resto;
 
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class KategoriMenu extends AppCompatActivity {
 

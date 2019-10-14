@@ -1,7 +1,6 @@
-package com.example.belajar1;
+package com.example.resto;
 
 import android.os.Bundle;
-
 
 import androidx.appcompat.app.AppCompatActivity;
 
