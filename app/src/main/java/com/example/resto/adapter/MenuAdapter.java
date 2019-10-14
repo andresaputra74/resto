@@ -47,7 +47,7 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 		holder.nama.setText(listMenu.get(position).getNama());
 		Glide.with(activity.getApplicationContext())
 				.load(listMenu.get(position).getGambar())
-				.apply(new RequestOptions().fitCenter())
+				.apply(new RequestOptions().override(120, 120))
 				.into(holder.gambar);
 	}
 
@@ -56,15 +56,15 @@ public class MenuAdapter extends RecyclerView.Adapter<MenuAdapter.ViewHolder> {
 		return listMenu.size();
 	}
 
-	public class ViewHolder extends RecyclerView.ViewHolder {
+	class ViewHolder extends RecyclerView.ViewHolder {
 
-		ImageView gambar;
-		TextView nama;
+		final ImageView gambar;
+		final TextView nama;
 
-		public ViewHolder(@NonNull View itemView) {
+		ViewHolder(@NonNull View itemView) {
 			super(itemView);
 
-			gambar = itemView.findViewById(R.id.gambar);
+			gambar = itemView.findViewById(R.id.img_makanan);
 			nama = itemView.findViewById(R.id.tv_nama_makanan);
 		}
 	}
