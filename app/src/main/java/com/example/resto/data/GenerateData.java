@@ -134,42 +134,42 @@ public class GenerateData {
     public static List<Menu> getListMenuSnack() {
         List<Menu> listMenuSnack = new ArrayList<>();
 
-        getListMenuSnack().add(new Menu(
+        listMenuSnack.add(new Menu(
                 R.drawable.ayamkrispi1,
                 TIPE_SNACK,
                 "Cryspi Chicken",
                 "Rp. 12.000",
                 "sdsd"
         ));
-        getListMenuSnack().add(new Menu(
+        listMenuSnack.add(new Menu(
                 R.drawable.jamurkrispi1,
                 TIPE_SNACK,
                 "Jamur Crispi",
                 "Rp. 14.000",
                 "sdsd"
         ));
-        getListMenuSnack().add(new Menu(
+        listMenuSnack.add(new Menu(
                 R.drawable.kentang1,
                 TIPE_SNACK,
                 "French Fries",
                 "Rp. 10.000",
                 "sdsd"
         ));
-        getListMenuSnack().add(new Menu(
+        listMenuSnack.add(new Menu(
                 R.drawable.onionring1,
                 TIPE_SNACK,
                 "Onion Ring",
                 "Rp. 14.000",
                 "sdsd"
         ));
-        getListMenuSnack().add(new Menu(
+        listMenuSnack.add(new Menu(
                 R.drawable.rotibakar1,
                 TIPE_SNACK,
                 "Roti Bakar",
                 "Rp. 12.000",
                 "sdsd"
         ));
-        getListMenuSnack().add(new Menu(
+        listMenuSnack.add(new Menu(
                 R.drawable.tahubakso1,
                 TIPE_SNACK,
                 "Tahu Bakso",

@@ -9,6 +9,6 @@
         android:id="@+id/gambar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/firstpage"
+        android:background="@drawable/burger1"
         tools:ignore="ContentDescription"/>
 </LinearLayout>
