@@ -11,6 +11,10 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.resto.R;
 import com.example.resto.fragment.ItemFragment;
 
+import static com.example.resto.model.Menu.TIPE_MAKANAN;
+import static com.example.resto.model.Menu.TIPE_MINUMAN;
+import static com.example.resto.model.Menu.TIPE_SNACK;
+
 public class DashboardActivity extends AppCompatActivity implements View.OnClickListener {
 
 	@Override
@@ -25,29 +29,31 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
 		btnMakanan.setOnClickListener(this);
 		btnMinuman.setOnClickListener(this);
 		btnSnack.setOnClickListener(this);
+
+		populateFragment(ItemFragment.TAG_FRAGMENT_MAKANAN, TIPE_MAKANAN);
 	}
 
 	@Override
 	public void onClick(View view) {
 		switch (view.getId()) {
 			case R.id.btn_makanan:
-				populateFragment(ItemFragment.TAG_FRAGMENT_MAKANAN);
+				populateFragment(ItemFragment.TAG_FRAGMENT_MAKANAN, TIPE_MAKANAN);
 				break;
 			case R.id.btn_minuman:
-				populateFragment(ItemFragment.TAG_FRAGMENT_MINUMAN);
+				populateFragment(ItemFragment.TAG_FRAGMENT_MINUMAN, TIPE_MINUMAN);
 				break;
 			case R.id.btn_snack:
-				populateFragment(ItemFragment.TAG_FRAGMENT_SNACK);
+				populateFragment(ItemFragment.TAG_FRAGMENT_SNACK, TIPE_SNACK);
 				break;
 		}
 	}
 
-	private void populateFragment(String fragmentTag) {
+	private void populateFragment(String fragmentTag, int tipeMenu) {
 		getSupportFragmentManager().executePendingTransactions();
 		FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 		Fragment fragment = getSupportFragmentManager().findFragmentByTag(fragmentTag);
 		if (fragment == null) {
-			fragment = ItemFragment.newInstance();
+			fragment = ItemFragment.newInstance(tipeMenu);
 			fragmentTransaction.add(R.id.frame_container, fragment, fragmentTag);
 			fragmentTransaction.addToBackStack(null);
 		} else {
