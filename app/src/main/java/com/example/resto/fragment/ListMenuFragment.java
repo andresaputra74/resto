@@ -17,7 +17,7 @@ import static com.example.resto.model.Menu.TIPE_MAKANAN;
 import static com.example.resto.model.Menu.TIPE_MINUMAN;
 import static com.example.resto.model.Menu.TIPE_SNACK;
 
-public class ItemFragment extends Fragment {
+public class ListMenuFragment extends Fragment {
 
 	public static final String TAG_FRAGMENT_MAKANAN = "fragment_makanan";
 	public static final String TAG_FRAGMENT_MINUMAN = "fragment_minuman";
@@ -26,15 +26,15 @@ public class ItemFragment extends Fragment {
 	private RecyclerView rvDaftarMenu;
 	private int tipeMenu;
 
-	public ItemFragment() {
+	public ListMenuFragment() {
 	}
 
-	private ItemFragment(int tipeMenu) {
+	private ListMenuFragment(int tipeMenu) {
 		this.tipeMenu = tipeMenu;
 	}
 
-	public static ItemFragment newInstance(int tipeMenu) {
-		return new ItemFragment(tipeMenu);
+	public static ListMenuFragment newInstance(int tipeMenu) {
+		return new ListMenuFragment(tipeMenu);
 	}
 
 	@Override
@@ -63,5 +63,6 @@ public class ItemFragment extends Fragment {
 		}
 
 		rvDaftarMenu.setAdapter(menuAdapter);
+		rvDaftarMenu.setHasFixedSize(true);
 	}
 }

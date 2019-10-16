@@ -7,8 +7,9 @@
 
     <ImageView
         android:id="@+id/gambar"
+        android:scaleType="fitXY"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/firstpage"
+        tools:background="@drawable/firstpage"
         tools:ignore="ContentDescription"/>
 </LinearLayout>
