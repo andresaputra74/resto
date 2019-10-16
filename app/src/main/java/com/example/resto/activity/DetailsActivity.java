@@ -19,13 +19,13 @@ public class DetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-		ImageView gambar = findViewById(R.id.gambar_detail);
-
 		Menu menu = getIntent().getParcelableExtra(EXTRA_MENU);
 		if (menu != null) {
 			((TextView) findViewById(R.id.name_detail)).setText(menu.getNama());
 			((TextView) findViewById(R.id.deskripsi_detail)).setText(menu.getDeskripsi());
-			Glide.with(this).load(menu.getGambar()).into(gambar);
+			Glide.with(this).load(menu.getGambar()).into((ImageView) findViewById(R.id.gambar_detail));
 		}
+
+		Glide.with(this).load(R.drawable.pin).into((ImageView) findViewById(R.id.img_pin));
     }
 }

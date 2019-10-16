@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".activity.DetailsActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -59,8 +60,8 @@
 
         <ImageView
             android:id="@+id/img_pin"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
             android:layout_marginTop="10dp"
             app:layout_constraintStart_toStartOf="@id/deskripsi_detail"
             app:layout_constraintTop_toBottomOf="@id/deskripsi_detail"
@@ -71,7 +72,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="5dp"
             android:text="@string/location"
             android:textSize="20sp"
             android:textStyle="bold"
