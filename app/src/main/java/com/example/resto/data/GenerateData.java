@@ -20,7 +20,7 @@ public class GenerateData {
                 TIPE_MAKANAN,
                 "Chciken Burger",
                 "Rp. 34.000",
-                "dari bahan pilihan yang berkualitas baik, dengan roti kualitas terbaik, daun selada yang masih segar serta daging ayam pilihan yang berkualitas dengan baik"
+                "Chicken Burger dari bahan pilihan yang berkualitas baik, dengan roti kualitas terbaik, daun selada yang masih segar serta daging ayam pilihan yang berkualitas dengan baik"
         ));
         listMenuMakanan.add(new Menu(
                 R.drawable.burgerblack,
@@ -48,28 +48,28 @@ public class GenerateData {
                 TIPE_MAKANAN,
                 "Spicy Burger",
                 "Rp. 40.000",
-                "sd"
+                "Spicy Burger ini menu terbaru dari kami dengan tampilan warna dan rasa terbaru dengan rasa pedas yang lebih pedas dari saus biasa"
         ));
         listMenuMakanan.add(new Menu(
                 R.drawable.hotdog,
                 TIPE_MAKANAN,
                 "Hot Dog",
                 "Rp. 24.000",
-                "d"
+                "Hot Dog terbuat dari sosis yang terbalut dengan roti dengan tambahan saus dan mayonais yang berkualitas baik dan di ambil dari sosis pilihan dari daging yang segar"
         ));
         listMenuMakanan.add(new Menu(
                 R.drawable.kebab,
                 TIPE_MAKANAN,
                 "Kebab",
                 "Rp. 26.000",
-                "sdsd"
+                "Kebab merupakan makanan asal Turki dengan menggunakan daging-daging yang diolah terlebih dahulu dan ditambahkan sayur-sayuran hasil dari panen yang berkualitas"
         ));
         listMenuMakanan.add(new Menu(
                 R.drawable.sandwich,
                 TIPE_MAKANAN,
                 "Sandwich",
                 "Rp. 20.000",
-                "sdsd"
+                "Sandwich makanan dengan sayuran terbaik dari hasil panen dan ditambahkan dengan telur yang berkualitas dan beef daging yang diolah dengan hygienis"
         ));
 
         return listMenuMakanan;
@@ -83,21 +83,21 @@ public class GenerateData {
                 TIPE_MINUMAN,
                 "Ice Bubble Gum",
                 "Rp. 15.000",
-                "sdsd"
+                "Bubble Gum atau yang biasa dikenal dengan permen karet ini sudah banyak penggemarnya, bubble gum bukan hanya sekedar dalam bentuk permen karet saja, kini kamu bisa mencoba sensasi manisnya bubble gum dalam sebuah minuman"
         ));
         listMenuMinuman.add(new Menu(
                 R.drawable.cappucino1,
                 TIPE_MINUMAN,
                 "Ice Cappucino",
                 "Rp. 12.000",
-                "sdsd"
+                "Cappucino merupakan minuman khas Italia yang dibuat dari espresso dan susu, tetapi referensi lain juga ada yang menyebutkan bahwa kapucino berawal dari biji biji kopi tentara Turki,"
         ));
         listMenuMinuman.add(new Menu(
                 R.drawable.taroblend1,
                 TIPE_MINUMAN,
                 "Ice Taro Blend",
                 "Rp. 16.000",
-                "sdsd"
+                "Taro merupakan salah satu jenis makanan yang sangat populer. Bentuk aslinya menyerupai dengan kentang dan ubi. Taro ini memiliki rasa manis dan sedikit rasa kacang, warna ungunya yang menjadi ciri khas dari makanan ini."
         ));
         listMenuMinuman.add(new Menu(
                 R.drawable.strawberry,
