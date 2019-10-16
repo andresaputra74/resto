@@ -27,7 +27,7 @@
             android:paddingTop="10sp"
             android:paddingRight="15sp"
             android:paddingBottom="10sp"
-            android:text="ini buat nama makanan/minuman"
+            tools:text="ini buat nama makanan/minuman"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -40,7 +40,8 @@
             android:layout_width="match_parent"
             android:layout_height="250sp"
             app:layout_constraintTop_toBottomOf="@id/name_detail"
-            tools:src="@drawable/burger1" />
+            tools:src="@drawable/burger1"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/deskripsi"
@@ -99,10 +100,11 @@
                 android:id="@+id/lokasi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingLeft="15sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
                 android:paddingTop="10sp"
                 android:paddingBottom="10sp"
-                android:text=" Jl Kertosono Gresik \n Jl Malioboro Surabaya \n Jl Kota Baru Magelang"
+                android:text="@string/dummy_location"
                 android:textSize="15sp"
                 app:layout_constraintTop_toBottomOf="@id/img_pin"
                 tools:layout_editor_absoluteX="1dp" />
